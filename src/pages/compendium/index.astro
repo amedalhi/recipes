@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+
+const recipes = await getCollection("recipes", ({ data }) => !data.isDraft);
+
+console.log(recipes);
+---
+
+<ol>
+  {
+    recipes.map((recipe) => (
+      <li>
+        <a href={`/compendium/${recipe.data.slug}`}>{recipe.data.title}</a>
+      </li>
+    ))
+  }
+</ol>

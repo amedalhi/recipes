@@ -1,0 +1,28 @@
+---
+//css
+import "@styles/global.css";
+
+//components
+import Head from "@components/Head.astro";
+import Nav from "@components/Nav.astro";
+import Footer from "@components/Footer.astro";
+
+//props
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+const theme = Astro.cookies.get("theme")?.value ?? "light";
+---
+
+<!doctype html>
+<html lang="en" data-theme={theme}>
+  <Head title="Website" />
+  <body class="container-full-layout">
+    <Nav />
+    <slot />
+    <Footer />
+  </body>
+</html>
