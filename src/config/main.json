@@ -1,7 +1,7 @@
 {
-    "siteInfo": {
-        "siteName": "Astro Minimalist Starter",
-        "description": "A minimalist starter for Astro",
-        "keywords": "astro, starter"
-    }
+  "siteInfo": {
+    "siteName": "Recipes",
+    "description": "A Papias family recipe compendium",
+    "keywords": "recipes"
+  }
 }

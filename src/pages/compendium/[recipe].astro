@@ -21,8 +21,21 @@ console.log(recipe);
 ---
 
 <RecipeLayout title={recipe.data.title}>
-  <div>
-    <h1>{recipe.data.description}</h1>
-    <h2>This is a test</h2>
-  </div>
+  <main>
+    <section>
+      <h1>{recipe.data.title}</h1>
+      <p>{recipe.data.description}</p>
+      {recipe.data.tags?.map((tag) => <span>{tag} </span>)}
+    </section>
+    <section>
+      <h2>Ingredients</h2>
+      <ul>
+        {
+          recipe.data.ingredients.map((ingredient) => (
+            <li>{}</li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
 </RecipeLayout>

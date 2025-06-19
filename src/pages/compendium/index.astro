@@ -1,4 +1,14 @@
 ---
+//layouts
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+//components
+import RecipeCard from "@components/compendium/RecipeCard.astro";
+
+//colors
+const cardColors = ["#fe3400", "#e0dfd3", "#cecdc1"];
+
+//content
 import { getCollection } from "astro:content";
 
 const recipes = await getCollection("recipes", ({ data }) => !data.isDraft);
@@ -6,12 +16,69 @@ const recipes = await getCollection("recipes", ({ data }) => !data.isDraft);
 console.log(recipes);
 ---
 
-<ol>
-  {
-    recipes.map((recipe) => (
-      <li>
-        <a href={`/compendium/${recipe.data.slug}`}>{recipe.data.title}</a>
-      </li>
-    ))
+<BaseLayout title="Compendium">
+  <main>
+    <h1>Recipe <br /> Compendium</h1>
+    <ul>
+      {
+        recipes.map((recipe, index) => (
+          <li
+            class="recipe-card"
+            style={`
+              background-color: ${cardColors[index % cardColors.length]};
+            `}
+          >
+            <RecipeCard
+              slug={recipe.data.slug}
+              title={recipe.data.title}
+              tags={recipe.data.tags}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
-</ol>
+
+  h1 {
+    font-size: var(--step-4);
+    font-weight: 700;
+    margin: var(--space-l) 0 var(--space-xl);
+
+    letter-spacing: -1.2px;
+    line-height: 48px;
+
+    padding-left: var(--space-s);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .recipe-card {
+    margin-bottom: -8px;
+
+    border-top-left-radius: var(--radius-medium);
+    border-top-right-radius: var(--radius-medium);
+  }
+
+  .recipe-card:last-child {
+    border-bottom-left-radius: var(--radius-medium);
+    border-bottom-right-radius: var(--radius-medium);
+    margin-bottom: 0;
+  }
+</style>

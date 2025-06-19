@@ -1,0 +1,37 @@
+---
+//props
+interface Props {
+  slug: string;
+  title: string;
+  tags: string[];
+}
+
+const { slug, title, tags } = Astro.props;
+---
+
+<a href={`/compendium/${slug}`}>
+  <article>
+    <h2>{title}</h2>
+    {tags.map((tag) => <span>{tag} </span>)}
+  </article>
+</a>
+
+<style>
+  article {
+    padding: var(--space-s);
+  }
+
+  h2 {
+    font-size: var(--step-2);
+    font-weight: 600;
+    margin-bottom: var(--space-m);
+    color: black;
+  }
+
+  span {
+    font-size: var(--step--2);
+    font-weight: 500;
+    color: var(--clr-text);
+    text-transform: uppercase;
+  }
+</style>

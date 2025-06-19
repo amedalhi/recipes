@@ -188,7 +188,7 @@ p {
   /* == Radius == */
   --radius-square: 0;
   --radius-blunt: 3px;
-  --radius-medium: 5px;
+  --radius-medium: 9px;
   --radius-round: 50px;
   --radius-circle: 50%;
 }
@@ -230,7 +230,7 @@ p {
   min-height: 100vh;
   min-height: 100dvh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
 }
 
 /* wrappers */
