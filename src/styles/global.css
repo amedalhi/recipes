@@ -145,7 +145,7 @@ p {
   --clr-button-disabled: #7f7f7f;
 
   /* == Theme == */
-  color-scheme: light;
+  /* color-scheme: light; */
 
   /* == Typography == */
   --ff-primary: "Inter Variable", sans-serif;
@@ -197,7 +197,7 @@ p {
 /*--------------------------DARK/LIGHT THEME----------------------------*/
 /************************************************************************/
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --clr-text: var(--cl-text-dark);
     --clr-bg: var(--cl-bg-dark);
@@ -218,7 +218,7 @@ p {
   --clr-bg: var(--cl-bg);
   --icon-filter: none;
   color-scheme: light;
-}
+} */
 
 
 
