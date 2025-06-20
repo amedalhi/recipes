@@ -22,13 +22,17 @@ console.log(recipe.data.ingredients);
 ---
 
 <RecipeLayout title={recipe.data.title}>
-  <main>
+  <main class="wrapper-main margin-center">
     <section class="section-header">
-      <h1>{recipe.data.title}</h1>
+      <div class="header-tags">
+        {recipe.data.tags?.map((tag) => <span class="tags">{tag}</span>)}
+      </div>
       <p class="recipe-description">{recipe.data.description}</p>
-      {recipe.data.tags?.map((tag) => <span>{tag} </span>)}
+      <div class="header-title">
+        <h1>{recipe.data.title}</h1>
+      </div>
     </section>
-    <section>
+    <section class="section-ingredients">
       <h2>Ingredients</h2>
       {
         recipe.data.ingredients?.map((ingredientGroup, groupIndex) => (
@@ -66,24 +70,118 @@ console.log(recipe.data.ingredients);
         ))
       }
     </section>
-    <section>
+    <section class="section-method">
       <h2>Method</h2>
       <Content />
     </section>
+    {
+      recipe.data.notes && recipe.data.notes.length > 0 && (
+        <section>
+          <h2>Notes</h2>
+          <ul>
+            {recipe.data.notes.map((note) => (
+              <li>{note}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+    {
+      recipe.data.source && (
+        <section>
+          <h2>Source</h2>
+          <p>{recipe.data.source.text}</p>
+          {recipe.data.source.originalSource && (
+            <p>
+              Original recipe:
+              <a href={recipe.data.source.originalSource.url} target="_blank">
+                {recipe.data.source.originalSource.name}
+              </a>
+            </p>
+          )}
+        </section>
+      )
+    }
   </main>
 </RecipeLayout>
 
 <style>
-  .ingredients-section {
-    margin: 2rem 0;
+  .section-header {
+    margin-bottom: -8px;
+    padding: var(--space-s) var(--space-s) var(--space-s);
+    background-color: #cdcdcd;
+
+    display: flex;
+    flex-direction: column;
   }
 
-  .ingredient-group {
-    margin-bottom: 1.5rem;
+  .header-title {
+    display: flex;
+    flex-direction: column;
+
+    margin: var(--space-xl) 0 var(--space-s);
   }
 
-  .ingredient-group:last-child {
-    margin-bottom: 0;
+  h1 {
+    font-size: var(--step-5);
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 48px;
+    color: var(--clr-black);
+  }
+
+  .recipe-description {
+    font-size: var(--step-0);
+    font-weight: 400;
+    color: var(--clr-gray);
+    margin-top: var(--space-2xs);
+  }
+
+  .header-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: var(--space-2xs);
+  }
+
+  .tags {
+    font-size: var(--step--1);
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+
+    padding: var(--space-3xs) var(--space-s);
+    border-radius: var(--radius-round);
+
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: var(--step-2);
+    font-weight: 600;
+    margin-bottom: var(--space-m);
+    color: black;
+  }
+
+  .section-ingredients {
+    border-top-left-radius: var(--radius-medium);
+    border-top-right-radius: var(--radius-medium);
+    background-color: var(--clr-secondary);
+
+    padding: var(--space-l) var(--space-s) var(--space-l);
+
+    margin-bottom: -8px;
+  }
+
+  .section-method {
+    border-top-left-radius: var(--radius-medium);
+    border-top-right-radius: var(--radius-medium);
+    background-color: var(--clr-white);
+
+    padding: var(--space-l) var(--space-s) var(--space-l);
   }
 
   .ingredient-group-title {
@@ -117,7 +215,7 @@ console.log(recipe.data.ingredients);
     width: 1.25rem;
     height: 1.25rem;
     cursor: pointer;
-    accent-color: #059669;
+    accent-color: var(--clr-orange);
   }
 
   .ingredient-label {
@@ -185,34 +283,5 @@ console.log(recipe.data.ingredients);
     font-size: 0.875rem;
     margin-right: 0.5rem;
     color: #6b7280;
-  }
-</style>
-
-<style>
-  .section-header {
-    background-color: ##fe3400;
-    width: 100%;
-  }
-
-  h1 {
-    font-size: var(--step-3);
-    font-weight: 700;
-    margin: var(--space-l) 0 var(--space-s);
-
-    letter-spacing: -1.2px;
-    line-height: 48px;
-
-    padding-left: var(--space-s);
-  }
-
-  .recipe-description {
-    padding-left: var(--space-s);
-  }
-
-  h2 {
-    font-size: var(--step-2);
-    font-weight: 600;
-    margin-bottom: var(--space-m);
-    color: black;
   }
 </style>

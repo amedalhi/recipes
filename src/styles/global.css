@@ -112,8 +112,11 @@ p {
   --clr-gray: #3a3738;
   --clr-gray-light: #e4e7e0;
 
+  --clr-orange:#fe3400;
+  --clr-secondary: #e0dfd3;
+  --clr-tertiary: #cecdc1;
+
   --clr-primary: var(--clr-black);
-  --clr-secondary: var(--clr-gray);
 
   /* == Dark == */
   --cl-bg-dark: #3d3d3d;
@@ -235,7 +238,12 @@ p {
 
 /* wrappers */
 .wrapper-main {
-  width: min(120ch, 99% - 1.25rem);
+  width: min(90ch, 80% - 1.25rem);
+
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 .wrapper-heading {

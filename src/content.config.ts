@@ -25,6 +25,18 @@ const recipes = defineCollection({
         })
       )
       .optional(),
+    notes: z.array(z.string()).optional(),
+    source: z
+      .object({
+        text: z.string(),
+        originalSource: z
+          .object({
+            name: z.string(),
+            url: z.string().url(),
+          })
+          .optional(),
+      })
+      .optional(),
     isDraft: z.boolean().optional(),
   }),
 });

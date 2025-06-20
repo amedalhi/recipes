@@ -1,6 +1,6 @@
 ---
-title: "Caldito de Camaron"
-slug: "caldito-de-camaron"
+title: "Consome de Camaron"
+slug: "consome-de-camaron"
 description: "Spicy shirmp consome, as base for seafood soup or to be had on its own"
 
 date: 2025-06-16
@@ -53,16 +53,18 @@ ingredients:
       - name: "knorr tomate"
         quantity: "1"
         unit: "tbsp"
+
+notes: ["This is good", "very good"]
+
+source:
+  text: "This is a recipe i found online"
+  originalSource:
+    name: "Insta"
+    url: "https://www.instagram.com"
+
 isDraft: false
 ---
 
 1. Step 1
 2. Step 2
 3. Step 3
-
-## Notes:
-
-- Note 1
-- Note 2
-
-## Inspiration
