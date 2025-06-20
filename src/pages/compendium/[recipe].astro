@@ -17,25 +17,77 @@ export async function getStaticPaths() {
 }
 
 const { recipe } = Astro.props;
-console.log(recipe);
+const { Content } = await render(recipe);
+console.log(recipe.data.ingredients);
 ---
 
 <RecipeLayout title={recipe.data.title}>
   <main>
-    <section>
+    <section class="section-header">
       <h1>{recipe.data.title}</h1>
-      <p>{recipe.data.description}</p>
+      <p class="recipe-description">{recipe.data.description}</p>
       {recipe.data.tags?.map((tag) => <span>{tag} </span>)}
     </section>
     <section>
       <h2>Ingredients</h2>
-      <ul>
-        {
-          recipe.data.ingredients.map((ingredient) => (
-            <li>{}</li>
-          ))
-        }
-      </ul>
+      {
+        recipe.data.ingredients?.map((ingredientGroup) => (
+          <div class="ingredient-group">
+            {/* Only show heading if title exists and isn't empty */}
+            {ingredientGroup.title && ingredientGroup.title.trim() !== "" && (
+              <h3 class="ingredient-group-title">{ingredientGroup.title}</h3>
+            )}
+
+            <ul class="ingredient-list">
+              {ingredientGroup.items.map((item) => (
+                <li class="ingredient-item">
+                  {/* All on same line: quantity unit name */}
+                  {item.quantity && item.quantity.trim() !== "" && (
+                    <span class="quantity">{item.quantity}</span>
+                  )}
+                  {item.unit && item.unit.trim() !== "" && (
+                    <span class="unit">{item.unit}</span>
+                  )}
+                  <span class="name">{item.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </section>
+    <section>
+      <h2>Method</h2>
+      <Content />
     </section>
   </main>
 </RecipeLayout>
+
+<style>
+  .section-header {
+    background-color: ##fe3400;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: var(--step-3);
+    font-weight: 700;
+    margin: var(--space-l) 0 var(--space-s);
+
+    letter-spacing: -1.2px;
+    line-height: 48px;
+
+    padding-left: var(--space-s);
+  }
+
+  .recipe-description {
+    padding-left: var(--space-s);
+  }
+
+  h2 {
+    font-size: var(--step-2);
+    font-weight: 600;
+    margin-bottom: var(--space-m);
+    color: black;
+  }
+</style>
