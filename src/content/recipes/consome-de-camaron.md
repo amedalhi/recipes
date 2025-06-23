@@ -1,14 +1,14 @@
 ---
 title: "Consome de Camaron"
 slug: "consome-de-camaron"
-description: "Spicy shirmp consome, as base for seafood soup or to be had on its own"
+description: "Spicy shrimp consome, as base for seafood soup or to be had on its own"
 
 date: 2025-06-16
 
 tags: ["mexican", "soup"]
 
 ingredients:
-  - title: ""
+  - title: "Stuff"
     items:
       - name: "shrimp shells"
         quantity: ""
