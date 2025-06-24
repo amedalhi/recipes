@@ -6,14 +6,21 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import RecipeCard from "@components/compendium/RecipeCard.astro";
 
 //colors
-const cardColors = ["#fe3400", "#e0dfd3", "#cecdc1"];
+const orangeColor = "#fe3400";
+const grayColors = ["#e0dfd3", "#cecdc1"];
 
 //content
 import { getCollection } from "astro:content";
 
 const recipes = await getCollection("recipes", ({ data }) => !data.isDraft);
 
-console.log(recipes);
+const sortedRecipes = recipes.sort((a, b) => {
+  const idA = a.data.id;
+  const idB = b.data.id;
+  return idA.localeCompare(idB, undefined, { numeric: true });
+});
+
+console.log(sortedRecipes);
 ---
 
 <BaseLayout title="Compendium">
@@ -21,20 +28,26 @@ console.log(recipes);
     <h1>Recipe <br /> Compendium</h1>
     <ul>
       {
-        recipes.map((recipe, index) => (
-          <li
-            class="recipe-card"
-            style={`
-              background-color: ${cardColors[index % cardColors.length]};
-            `}
-          >
-            <RecipeCard
-              slug={recipe.data.slug}
-              title={recipe.data.title}
-              tags={recipe.data.tags ?? []}
-            />
-          </li>
-        ))
+        sortedRecipes.map((recipe, index) => {
+          const backgroundColor =
+            index === 0
+              ? orangeColor
+              : grayColors[(index - 1) % grayColors.length];
+
+          return (
+            <li
+              class="recipe-card"
+              style={`background-color: ${backgroundColor};`}
+            >
+              <RecipeCard
+                slug={recipe.data.slug}
+                title={recipe.data.title}
+                tags={recipe.data.tags ?? []}
+                id={recipe.data.id}
+              />
+            </li>
+          );
+        })
       }
     </ul>
   </main>

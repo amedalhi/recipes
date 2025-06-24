@@ -1,6 +1,7 @@
 ---
 title: "Consome de Camaron"
 slug: "consome-de-camaron"
+id: "003"
 description: "Spicy shrimp consome, as base for seafood soup or to be had on its own"
 
 date: 2025-06-16

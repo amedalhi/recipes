@@ -4,21 +4,31 @@ interface Props {
   slug: string;
   title: string;
   tags: string[];
+  id: string | number;
 }
 
-const { slug, title, tags } = Astro.props;
+const { slug, title, tags, id } = Astro.props;
 ---
 
 <a href={`/compendium/${slug}`}>
   <article>
-    <h2>{title}</h2>
-    {tags.map((tag) => <span>{tag} </span>)}
+    <div>
+      <h2>{title}</h2>
+      {tags.map((tag) => <span>{tag} </span>)}
+    </div>
+    <div>
+      <p>{id}</p>
+    </div>
   </article>
 </a>
 
 <style>
   article {
     padding: var(--space-s);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   h2 {
@@ -33,5 +43,11 @@ const { slug, title, tags } = Astro.props;
     font-weight: 500;
     color: var(--clr-text);
     text-transform: uppercase;
+  }
+
+  p {
+    font-size: var(--step-3);
+    font-weight: 600;
+    color: var(--clr-text);
   }
 </style>

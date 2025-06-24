@@ -1,6 +1,8 @@
 ---
 title: "Lentil Soup"
 slug: "lentil-soup"
+id: "004"
+
 description: "Classic, simple, and comforting lentil soup"
 
 date: 2025-06-19

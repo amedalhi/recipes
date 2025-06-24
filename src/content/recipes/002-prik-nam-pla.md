@@ -1,6 +1,7 @@
 ---
 title: "Prik Nam Pla"
 slug: "prik-nam-pla"
+id: "002"
 description: "Thai dipping sauce"
 
 date: 2025-06-19
