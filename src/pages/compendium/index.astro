@@ -31,7 +31,7 @@ console.log(recipes);
             <RecipeCard
               slug={recipe.data.slug}
               title={recipe.data.title}
-              tags={recipe.data.tags}
+              tags={recipe.data.tags ?? []}
             />
           </li>
         ))
@@ -44,23 +44,17 @@ console.log(recipes);
   main {
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto;
-    width: 80%;
-
-    @media (max-width: 800px) {
-      width: 100%;
-    } */
   }
 
   h1 {
-    font-size: var(--step-4);
+    font-size: var(--step-5);
     font-weight: 700;
-    margin: var(--space-l) 0 var(--space-xl);
+    margin: var(--space-2xl) 0 var(--space-m);
 
     letter-spacing: -1.2px;
-    line-height: 48px;
+    line-height: 52px;
 
-    padding-left: var(--space-s);
+    padding: 0 var(--space-xs);
   }
 
   ul {

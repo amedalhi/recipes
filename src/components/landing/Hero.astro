@@ -1,13 +1,80 @@
 ---
-
+import { Icon } from "astro-icon/components";
 ---
 
 <section>
-  <h1><a href="/compendium">Recipe Compendium</a></h1>
+  <h1>Welcome to my<br />Recipe Compendium</h1>
+  <a href="/compendium">
+    <span>Let's go</span>
+    <Icon name="material-symbols:arrow-right-alt" class="icon" />
+  </a>
 </section>
 
 <style>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+
+    padding-bottom: var(--space-xl);
+    padding-left: var(--space-m);
+    padding-right: var(--space-m); /* ← Add this */
+
+    @media (max-width: 850px) {
+      padding-left: var(--space-s);
+      padding-right: var(--space-s);
+    }
+  }
+
   h1 {
+    font-size: var(--step-6);
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 72px;
+    color: var(--clr-black);
+
     margin-bottom: var(--space-m);
+
+    @media (max-width: 850px) {
+      font-size: var(--step-4);
+
+      line-height: 52px;
+    }
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: solid 0.25px var(--clr-border);
+    padding-top: var(--space-s);
+  }
+
+  a:hover {
+    color: var(--clr-orange);
+    transition: all 0.2s ease;
+  }
+
+  a:hover .icon {
+    color: var(--clr-orange); /* makes sure the icon changes */
+    transition: all 0.2s ease;
+  }
+
+  a:hover span {
+    color: var(--clr-orange); /* redundant but explicit */
+    transition: all 0.2s ease;
+  }
+
+  span {
+    font-size: var(--step-3);
+    text-decoration: none;
+    color: var(--clr-black);
+  }
+
+  .icon {
+    font-size: var(--step-3);
   }
 </style>

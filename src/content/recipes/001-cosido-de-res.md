@@ -1,0 +1,70 @@
+---
+title: "Cosido de Res"
+slug: "cosido-de-res"
+description: "My favorite"
+
+date: 2025-06-24
+
+tags: ["mexican", "soup"]
+
+ingredients:
+  - title: "Stuff"
+    items:
+      - name: "shrimp shells"
+        quantity: ""
+        unit: ""
+        note: "from 0.5 lb of whole shrimp"
+      - name: "tomato"
+        quantity: "3"
+        unit: "each"
+      - name: "onion"
+        quantity: "0.25"
+        unit: "each"
+      - name: "garlic, clove"
+        quantity: "3"
+        unit: "each"
+      - name: "guajillo, chile"
+        quantity: "2"
+        unit: "each"
+      - name: "arbol, chile"
+        quantity: "3"
+        unit: "each"
+      - name: "chipotle seco, chile"
+        quantity: "1"
+        unit: "each"
+      - name: "cilantro, bunch"
+        quantity: "1"
+        unit: "each"
+      - name: "jalapeño"
+        quantity: "1"
+        unit: "each"
+      - name: "camaron seco"
+        quantity: "20"
+        unit: "g"
+      - name: "celery, stalk"
+        quantity: "1"
+        unit: "each"
+      - name: "oregano"
+        quantity: "1"
+        unit: "tsp"
+      - name: "garlic, powder"
+        quantity: "1"
+        unit: "tsp"
+      - name: "knorr tomate"
+        quantity: "1"
+        unit: "tbsp"
+
+notes: ["This is good", "very good"]
+
+source:
+  text: "This is a recipe i found online"
+  originalSource:
+    name: "Insta"
+    url: "https://www.instagram.com"
+
+isDraft: false
+---
+
+1. Step 1
+2. Step 2
+3. Step 3

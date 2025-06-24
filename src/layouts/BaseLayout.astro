@@ -4,7 +4,6 @@ import "@styles/global.css";
 
 //components
 import Head from "@components/Head.astro";
-import Footer from "@components/Footer.astro";
 
 //props
 interface Props {
@@ -19,6 +18,5 @@ const { title } = Astro.props;
   <Head title="Website" />
   <body class="container-full-layout">
     <slot />
-    <Footer />
   </body>
 </html>
