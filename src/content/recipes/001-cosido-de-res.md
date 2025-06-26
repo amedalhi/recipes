@@ -21,7 +21,7 @@ ingredients:
       - name: "beef bones"
         quantity: "2-3"
         unit: "each"
-        note: "*optional"
+        note: "*optional, preferably neck bones with meat"
       - name: "onion, white"
         quantity: "2"
         unit: "each"
@@ -34,29 +34,39 @@ ingredients:
       - name: "corn"
         quantity: "2"
         unit: "each"
-      - name: "cilantro, bunch"
-        quantity: "1"
+      - name: "potato"
+        quantity: "3"
         unit: "each"
-      - name: "jalapeño"
-        quantity: "1"
+      - name: "zucchini"
+        quantity: "2"
         unit: "each"
-      - name: "camaron seco"
-        quantity: "20"
-        unit: "g"
-      - name: "celery, stalk"
-        quantity: "1"
+      - name: "chayote"
+        quantity: "2"
         unit: "each"
-      - name: "oregano"
-        quantity: "1"
-        unit: "tsp"
-      - name: "garlic, powder"
-        quantity: "1"
-        unit: "tsp"
-      - name: "knorr tomate"
-        quantity: "1"
-        unit: "tbsp"
+        note: "optional"
+      - name: "green beans"
+        quantity: "0.5"
+        unit: "lbs"
+      - name: "salt"
+        quantity: ""
+        unit: ""
+        note: "to taste"
+      - name: "tortillas, corn"
+        quantity: ""
+        unit: ""
+        note: "to serve"
+      - name: "favorite salsa/chile"
+        quantity: ""
+        unit: ""
+        note: "to serve"
 
-notes: ["This is good", "very good"]
+notes:
+  [
+    "Don't bother making this if you don't use shank, as a thank you for your efforts you can have a bone marrow taco",
+    "Beef chuck is fine/optional, sometimes I'll use beef neck with plenty of meat still on the bones. Other times I simply use more shank",
+    "The vegetables I noted above are my favorites, but others will use Mexican Squash instead of zucchini, chayote is something I grew up eating but never my favorite so its optional",
+    "Some will add cabbage, I've yet to try it, but will update the recipe when I do",
+  ]
 
 source:
   text: "This is a recipe i found online"
