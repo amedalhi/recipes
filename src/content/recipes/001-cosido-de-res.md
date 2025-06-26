@@ -2,7 +2,7 @@
 title: "Cosido de Res"
 slug: "cosido-de-res"
 id: "001"
-description: "If I'm ever on death row for slaying too hard (I think that was used correctly), serve me a bowl of cosido as a final meal"
+description: "If I'm ever on death row, serve me a bowl of Cosido as a final meal."
 
 date: 2025-06-24
 
@@ -21,7 +21,7 @@ ingredients:
       - name: "beef bones"
         quantity: "2-3"
         unit: "each"
-        note: "*optional, preferably neck bones with meat"
+        note: "*optional"
       - name: "onion, white"
         quantity: "2"
         unit: "each"
@@ -67,7 +67,7 @@ ingredients:
 notes:
   [
     "Don't bother making this if you don't use shank, as a thank you for your efforts you can have a bone marrow taco.",
-    "Beef chuck is fine/optional, sometimes I'll use beef neck with plenty of meat still on the bones. Other times I simply use more shank.",
+    "Beef chuck is filler, sometimes I'll use beef neck with plenty of meat still on the bones. Other times I simply use more shank.",
     "The vegetables I noted above are my favorites, but others will use Mexican Squash instead of zucchini, chayote is something I grew up eating but never my favorite so its optional.",
     "Some will add cabbage, I've yet to try it, but will update the recipe when I do.",
   ]
