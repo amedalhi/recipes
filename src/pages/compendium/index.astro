@@ -34,9 +34,11 @@ console.log(sortedRecipes);
               ? orangeColor
               : grayColors[(index - 1) % grayColors.length];
 
+          const isFirstCard = index === 0;
+
           return (
             <li
-              class="recipe-card"
+              class={`recipe-card ${isFirstCard ? "first-card" : ""}`}
               style={`background-color: ${backgroundColor};`}
             >
               <RecipeCard
@@ -87,5 +89,12 @@ console.log(sortedRecipes);
     border-bottom-left-radius: var(--radius-medium);
     border-bottom-right-radius: var(--radius-medium);
     margin-bottom: 0;
+  }
+
+  /* Target the first card to make text white */
+  .recipe-card.first-card :global(h2),
+  .recipe-card.first-card :global(span),
+  .recipe-card.first-card :global(p) {
+    color: white !important;
   }
 </style>
