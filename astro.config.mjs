@@ -1,20 +1,15 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 
-import node from "@astrojs/node";
+import netlify from "@astrojs/netlify";
 import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [icon()],
-  adapter: node({
-    mode: "standalone",
-  }),
+  adapter: netlify(),
   output: "server",
   session: {
     driver: "redis",
   },
-  // experimental: {
-  //   session: true,
-  // },
 });
