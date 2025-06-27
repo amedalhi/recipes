@@ -73,18 +73,18 @@ notes:
   ]
 
 source:
-  text: "This was one of my favorite meals growing up, one of the first meals that replicated and got right the first time around due to it's simplicity. I love it's simplicity, its a beef and vegetable soup. That's it. "
+  text: "This was one of my favorite meals growing up, one of the first meals that I replicated and got right the first time around due to its simplicity. I love its simplicity, it's a beef and vegetable soup. That's it."
 
 isDraft: false
 ---
 
-1. In a large stock put, place all of the beef and enough to water to cover it plus and inch.
-2. Bring to a boil, skim off the scum, lower heat to rolling simmer
+1. In a large stock pot, place all of the beef and enough water to cover it plus an inch.
+2. Bring to a boil, skim off the scum, and lower heat to a rolling simmer.
 3. Add 1 onion cut in half, couple sprigs of cilantro, and ~3 TBSP of salt. Cook for 1.5 - 2 hours until almost fork tender.
-4. In the mean time prep the vegetables by chopping them into even large pieces.
-5. When beef is almost done, add vegetable in stages based on cooking times to avoid mushy veggies. Start with corn, carrots, and green beans.
+4. In the meantime prep the vegetables by chopping them into evenly large pieces.
+5. When beef is almost done, add vegetables in stages based on cooking times to avoid mushy veggies. Start with corn, carrots, and green beans.
 6. 10 minutes later, add potatoes.
 7. 15 minutes later, add zucchini.
 8. Continue simmering until all vegetables are cooked and the beef is fork tender.
 9. Finely chop cilantro and onion for serving and garnishing.
-10. Serve with corn tortillas, favorite salsa (I always make a tomatillo salsa to go with this), lime, and chopped onion/cilantro
+10. Serve with corn tortillas, favorite salsa (I always make a tomatillo salsa to go with this), lime, and chopped onion/cilantro.

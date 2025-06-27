@@ -1,15 +1,15 @@
 ---
-title: "Consome de Camaron"
+title: "Consomé de Camarón"
 slug: "consome-de-camaron"
 id: "003"
-description: "Spicy shrimp consome, as base for seafood soup or to be had on its own"
+description: "Spicy shrimp consome, use it as a base or as a hangover cure."
 
 date: 2025-06-16
 
 tags: ["mexican", "soup"]
 
 ingredients:
-  - title: "Stuff"
+  - title: ""
     items:
       - name: "shrimp shells"
         quantity: ""
@@ -19,7 +19,7 @@ ingredients:
         quantity: "3"
         unit: "each"
       - name: "onion"
-        quantity: "0.25"
+        quantity: "0.5"
         unit: "each"
       - name: "garlic, clove"
         quantity: "3"
@@ -39,8 +39,8 @@ ingredients:
       - name: "jalapeño"
         quantity: "1"
         unit: "each"
-      - name: "camaron seco"
-        quantity: "20"
+      - name: "shrimp, dried"
+        quantity: "50"
         unit: "g"
       - name: "celery, stalk"
         quantity: "1"
@@ -55,17 +55,25 @@ ingredients:
         quantity: "1"
         unit: "tbsp"
 
-notes: ["This is good", "very good"]
+notes:
+  [
+    "If the shrimp has heads still on, add them to the shells.",
+    "I like to eat it with some cooked shrimp, chopped cilantro, and lime. This would also be great as a base for siete mares soup.",
+  ]
 
 source:
-  text: "This is a recipe i found online"
+  text: "The power of the algorithm showed me this beautiful hangover elixir. The content creator recommended using this as the base for 'Cup Noodles' but I highly suggest against it as it was way too salty."
   originalSource:
-    name: "Insta"
-    url: "https://www.instagram.com"
+    name: "Instagram - @almablancog"
+    url: "https://www.instagram.com/p/DBhrcC2ug9k/"
 
 isDraft: false
 ---
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. In a medium stock pot, sauté tomatoes, onion, garlic, and chiles.
+2. Remove dried chiles as soon as they've picked up some color to avoid developing bitterness.
+3. Add in the shrimp shells and continue sauteing everything together for a few minutes.
+4. Add water along with half a bunch of cilantro, celery, dried shrimp, Knorr tomate, oregano, and garlic powder. Simmer for 20 mins.
+5. Transfer all but shrimp shells, celery, cilantro, and broth to a blender. Blend until pureed.
+6. From your broth, remove all of the shrimp shells, celery and cilantro with a slotted spoon.
+7. Reintroduce the puree into the broth, simmer, and season to taste.
