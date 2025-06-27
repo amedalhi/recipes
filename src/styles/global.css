@@ -230,6 +230,7 @@ p {
 /************************************************************************/
 /* containers */
 .container-full-layout {
+  overflow-x: hidden;
   min-height: 100vh;
   min-height: 100dvh;
   display: grid;

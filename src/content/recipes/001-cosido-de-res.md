@@ -2,7 +2,7 @@
 title: "Cosido de Res"
 slug: "cosido-de-res"
 id: "001"
-description: "If I'm ever on death row, serve me a bowl of Cosido as a final meal."
+description: "If I'm ever on death row, serve me a bowl of Cosido as my final meal."
 
 date: 2025-06-24
 
