@@ -70,10 +70,10 @@ source:
 isDraft: false
 ---
 
-1. In a medium stock pot, sauté tomatoes, onion, garlic, and chiles.
+1. In a medium stock pot, sauté tomatoes, onion, garlic, and chiles in a neutral oil.
 2. Remove dried chiles as soon as they've picked up some color to avoid developing bitterness.
 3. Add in the shrimp shells and continue sauteing everything together for a few minutes.
-4. Add water along with half a bunch of cilantro, celery, dried shrimp, Knorr tomate, oregano, and garlic powder. Simmer for 20 mins.
-5. Transfer all but shrimp shells, celery, cilantro, and broth to a blender. Blend until pureed.
-6. From your broth, remove all of the shrimp shells, celery and cilantro with a slotted spoon.
-7. Reintroduce the puree into the broth, simmer, and season to taste.
+4. Add water along with previously sauteed dried chiles, half a bunch of cilantro, celery, dried shrimp, Knorr tomate, oregano, and garlic powder. Simmer for 20 mins.
+5. Transfer everything EXCEPT broth, shrimp shells, celery, and cilantro. Blend with a bit of broth until pureed.
+6. From your broth, discard all of the shrimp shells, celery and cilantro with a slotted spoon.
+7. Reintroduce the strained puree into the broth, simmer, and season to taste.

@@ -19,8 +19,6 @@ const sortedRecipes = recipes.sort((a, b) => {
   const idB = b.data.id;
   return idA.localeCompare(idB, undefined, { numeric: true });
 });
-
-console.log(sortedRecipes);
 ---
 
 <BaseLayout title="Compendium">

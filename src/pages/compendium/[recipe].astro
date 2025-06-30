@@ -52,7 +52,6 @@ const { Content } = await render(recipe);
                     for={`ingredient-${groupIndex}-${index}`}
                     class="ingredient-label"
                   >
-                    {/* All on same line: quantity unit name */}
                     {item.quantity && item.quantity.trim() !== "" && (
                       <span class="quantity">{item.quantity}</span>
                     )}

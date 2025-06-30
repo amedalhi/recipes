@@ -31,7 +31,7 @@ ingredients:
 notes:
   [
     "Thai chiles are obviously first choice, however serranos are a great substitute.",
-    "If it's too spicy, I've added a bit of palm sugar to curb a bit of the spiciness.",
+    "If it's too spicy, add a bit of palm sugar.",
   ]
 
 source:
