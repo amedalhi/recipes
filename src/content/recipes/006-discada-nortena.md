@@ -23,7 +23,6 @@ ingredients:
       - name: "bistec picado (chopped steak*)"
         quantity: "2"
         unit: "lb"
-        note: "salted"
       - name: "chorizo"
         quantity: "1"
         unit: "lb"
@@ -62,7 +61,7 @@ source:
 isDraft: false
 ---
 
-1. Mise en place: chop bacon, dice veg, start drinking one of the beers, have all ingredients at a hands reach.
+1. Mise en place: chop bacon, dice veg, salt the bistec, start drinking one of the beers, and place all ingredients at a hands reach.
 2. In a disco\*, start by rendering down the bacon. Once cooked thoroughly, move up to the side of the disco.
 3. Add the chicken into the bacon grease and cook thoroughly, push to edge.
 4. Add the chiles güero around the edge of the disco.
