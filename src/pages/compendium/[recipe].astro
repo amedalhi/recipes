@@ -204,7 +204,15 @@ const { Content } = await render(recipe);
       padding: var(--space-2xs) 0;
     }
 
+    a {
+      text-decoration: underline;
+    }
 
+    a:hover {
+      text-decoration: none;
+      color: var(--clr-orange);
+      transition: all 0.2s ease;
+    }
   }
 
   .section-notes {
@@ -328,3 +336,10 @@ const { Content } = await render(recipe);
     }
   }
 </style>
+
+<!-- <style is:global>
+    a {
+    text-decoration: underline;
+    color: red;
+  }
+</style> -->

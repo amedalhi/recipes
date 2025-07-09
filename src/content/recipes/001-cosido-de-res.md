@@ -90,4 +90,4 @@ isDraft: false
 9. 15 minutes later, add zucchini.
 10. Continue simmering until all vegetables are cooked and the beef is fork tender.
 11. Finely chop cilantro and onion for serving and garnishing.
-12. Serve with corn tortillas, favorite salsa (I always make a tomatillo salsa to go with this), lime, and chopped onion/cilantro.
+12. Serve with corn tortillas, favorite salsa (I always make a [tomatillo salsa](https://recipes.amedalhi.com/compendium/salsa-verde-tomatillo/) to go with this), lime, and chopped onion/cilantro.
