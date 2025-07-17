@@ -17,7 +17,7 @@ ingredients:
       - name: "lime juice"
         quantity: "1"
         unit: "oz"
-        note: "I don't measure, sometimes I squeeze half a lime, most times I squeeze the whole lime"
+        note: "Don't measure, just squeeze a lime"
       - name: "topo chico"
         note: "to top off"
       - name: "orange bitters"
@@ -38,5 +38,5 @@ source:
 isDraft: false
 ---
 
-1. To a highball glass with ice, add tequila, lime juice, and 2 dashes of orange bitters.
-2. Top with Topo Chico.
+1. In a highball glass with ice, add tequila, lime juice, and 2 dashes of orange bitters.
+2. Top off with Topo Chico.
