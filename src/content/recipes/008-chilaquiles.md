@@ -28,7 +28,7 @@ ingredients:
         quantity: "2"
         unit: "each"
       - name: "cumin, powder"
-        quantity: "2"
+        quantity: "0.5"
         unit: "tsp"
       - name: "oregano, dried"
         quantity: "0.25"
