@@ -25,7 +25,7 @@ ingredients:
         quantity: "1"
         unit: "stalk"
       - name: "ginger, fresh"
-        quantity: "1"
+        quantity: "0.5"
         unit: "TBSP"
       - name: "oil, sesame"
         quantity: "1.5"
