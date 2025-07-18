@@ -28,7 +28,7 @@ ingredients:
         quantity: "1"
         unit: "TBSP"
       - name: "oil, sesame"
-        quantity: "2"
+        quantity: "1.5"
         unit: "TBSP"
       - name: "sesame seeds"
         quantity: "2"
@@ -53,4 +53,5 @@ isDraft: false
 1. Mise en place: dice onion, grate ginger, and thinly slice greening onion.
 2. Dice tuna into bit size chunks.
 3. Mix all of the ingredients together.
-4. Let marinate for 15 to 30 minutes (if you can wait).
+4. Salt to taste.
+5. Let marinate for 15 to 30 minutes (if you can wait).
