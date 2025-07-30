@@ -43,7 +43,7 @@ isDraft: false
 ---
 
 1. Mise en place: dice veg into large uniform pieces, keep cherry tomatoes whole, roughly mince garlic, salt & pep the chicken.
-2. Preheat oven to 350°F.
+2. Preheat oven to 375°F.
 3. In a large cast iron pan, sear the chicken thighs skin side down until golden crispy.
 4. Flip chicken and continue cooking for 5 minutes.
 5. Add garlic, saute for 30 seconds before adding the rest of the veggies.
