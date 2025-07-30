@@ -25,7 +25,7 @@ ingredients:
         quantity: "3"
         unit: "each"
       - name: "veg*"
-        note: "honestly, any other veg you have works well"
+        note: "honestly, any veggies you have work well"
 
 notes:
   [
